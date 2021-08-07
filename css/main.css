@@ -100,7 +100,7 @@ body {
   flex-direction: column;
   row-gap: 15px;
   width: 100%;
-  padding: 40px 0  20px !important;
+  padding: 40px 0 20px !important;
 }
 
 .newtons-tomb .tomb-head {
@@ -126,6 +126,8 @@ body {
 
 .references {
   padding-top: 25px !important;
-  text-align: left;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

@@ -15,7 +15,7 @@ body {
   padding: 25px 2% !important;
 
   .main-sections {
-      max-width: 500px;
+    max-width: 500px;
   }
 }
 
@@ -88,7 +88,7 @@ body {
   flex-direction: column;
   row-gap: 15px;
   width: 100%;
-  padding: 40px 0  20px !important;
+  padding: 40px 0 20px !important;
 
   .tomb-head {
     font-size: 1.3rem;
@@ -113,5 +113,7 @@ body {
 // REFERENCES
 .references {
   padding-top: 25px !important;
-  text-align: left;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
