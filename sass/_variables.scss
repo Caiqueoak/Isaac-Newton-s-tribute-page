@@ -1,0 +1,13 @@
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Georama', sans-serif;
+}
+
+@mixin centered-flex {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,117 @@
+@import "variables";
+
+// MOBILE RESOLUTION
+
+body {
+  @include centered-flex;
+  background-color: white;
+}
+
+#main {
+  @include centered-flex;
+  background-color: rgb(192, 192, 192);
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 2% !important;
+
+  .main-sections {
+      max-width: 500px;
+  }
+}
+
+// HEADER
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-bottom: 25px !important;
+
+  #title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .introduction {
+    font-size: 1.2rem;
+  }
+}
+
+// MAIN IMAGE
+#img-div {
+  @include centered-flex;
+  flex-direction: column;
+  background-color: rgb(212, 212, 212);
+  width: 100%;
+  padding: 40px 0 10px !important;
+
+  #image {
+    width: 90%;
+    height: auto;
+    min-width: 300px;
+    max-width: 700px;
+  }
+  #img-caption {
+    font-size: 1rem;
+    padding: 15px 0 5px !important;
+    text-align: center;
+    width: 70%;
+    min-width: 300px;
+  }
+}
+
+// TRIBUTE TIME LINE
+.tribute {
+  @include centered-flex;
+  flex-direction: column;
+  width: 100%;
+
+  #tribute-info {
+    padding: 30px 0 !important;
+    text-align: center;
+  }
+  .time-line-events {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    p {
+      display: inline;
+      padding: 0 300px;
+      margin-left: 50px;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+// TOMB
+.newtons-tomb {
+  @include centered-flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  padding: 40px 0  20px !important;
+
+  .tomb-head {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .tomb-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// QUOTE
+.quote-container {
+  @include centered-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+// REFERENCES
+.references {
+  padding-top: 25px !important;
+  text-align: left;
+}

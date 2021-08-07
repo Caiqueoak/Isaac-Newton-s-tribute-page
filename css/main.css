@@ -1,0 +1,131 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: 'Georama', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: silver;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 2% !important;
+}
+
+#main .main-sections {
+  max-width: 500px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-bottom: 25px !important;
+}
+
+.header #title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header .introduction {
+  font-size: 1.2rem;
+}
+
+#img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d4d4d4;
+  width: 100%;
+  padding: 40px 0 10px !important;
+}
+
+#img-div #image {
+  width: 90%;
+  height: auto;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+#img-div #img-caption {
+  font-size: 1rem;
+  padding: 15px 0 5px !important;
+  text-align: center;
+  width: 70%;
+  min-width: 300px;
+}
+
+.tribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tribute #tribute-info {
+  padding: 30px 0 !important;
+  text-align: center;
+}
+
+.tribute .time-line-events {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.tribute .time-line-events p {
+  display: inline;
+  padding: 0 300px;
+  margin-left: 50px;
+  line-height: 1.5rem;
+}
+
+.newtons-tomb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  padding: 40px 0  20px !important;
+}
+
+.newtons-tomb .tomb-head {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.newtons-tomb .tomb-img {
+  width: 100%;
+  height: auto;
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.references {
+  padding-top: 25px !important;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */
