@@ -9,62 +9,64 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: white;
 }
 
-#main {
+#main-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: silver;
   flex-direction: column;
   width: 100%;
-  padding: 25px 2% !important;
+  padding: 0 2% 25px !important;
 }
 
-#main .main-sections {
-  max-width: 500px;
+#main-box {
+  width: 95vw;
 }
 
-.header {
+#main-box .header {
   display: flex;
   flex-direction: column;
+  text-align: center;
   row-gap: 10px;
-  padding-bottom: 25px !important;
+  padding: 10px 0 !important;
 }
 
-.header #title {
+#main-box .header #title {
   font-size: 2rem;
   text-align: center;
 }
 
-.header .introduction {
+#main-box .header .introduction {
   font-size: 1.2rem;
 }
 
-#img-div {
+#main-box #img-div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #d4d4d4;
-  width: 100%;
-  padding: 40px 0 10px !important;
+  padding-top: 10px !important;
 }
 
-#img-div #image {
+#main-box #img-div #image {
   width: 90%;
   height: auto;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 700px;
 }
 
-#img-div #img-caption {
-  font-size: 1rem;
-  padding: 15px 0 5px !important;
+#main-box #img-div #img-caption {
   text-align: center;
-  width: 70%;
+  font-size: 1rem;
+  width: 100%;
   min-width: 300px;
+  max-width: 850px;
+  padding: 10px 0 !important;
 }
 
 .tribute {
@@ -73,6 +75,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  max-width: 500px;
 }
 
 .tribute #tribute-info {
@@ -100,6 +103,7 @@ body {
   flex-direction: column;
   row-gap: 15px;
   width: 100%;
+  max-width: 600px;
   padding: 40px 0 20px !important;
 }
 
@@ -125,9 +129,16 @@ body {
 }
 
 .references {
-  padding-top: 25px !important;
   text-align: center;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(37, 37, 37, 0.938), #252525);
+  padding: 25px !important;
   font-size: 1.25rem;
   font-weight: 700;
+  color: #d6d4d4;
+}
+
+.references a {
+  color: #4450fd;
 }
 /*# sourceMappingURL=main.css.map */

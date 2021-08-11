@@ -4,57 +4,62 @@
 
 body {
   @include centered-flex;
+  flex-direction: column;
   background-color: white;
 }
 
-#main {
+#main-container {
   @include centered-flex;
   background-color: rgb(192, 192, 192);
   flex-direction: column;
   width: 100%;
-  padding: 25px 2% !important;
+  padding: 0 2% 25px !important;
 
   .main-sections {
-    max-width: 500px;
   }
 }
 
-// HEADER
-.header {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding-bottom: 25px !important;
+#main-box {
+  width: 95vw;
 
-  #title {
-    font-size: 2rem;
+  // HEADER
+  .header {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-  }
-  .introduction {
-    font-size: 1.2rem;
-  }
-}
+    row-gap: 10px;
+    padding: 10px 0 !important;
 
-// MAIN IMAGE
-#img-div {
-  @include centered-flex;
-  flex-direction: column;
-  background-color: rgb(212, 212, 212);
-  width: 100%;
-  padding: 40px 0 10px !important;
-
-  #image {
-    width: 90%;
-    height: auto;
-    min-width: 300px;
-    max-width: 700px;
+    #title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .introduction {
+      font-size: 1.2rem;
+    }
   }
-  #img-caption {
-    font-size: 1rem;
-    padding: 15px 0 5px !important;
-    text-align: center;
-    width: 70%;
-    min-width: 300px;
+
+  // MAIN IMAGE
+  #img-div {
+    @include centered-flex;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212);
+    padding-top: 10px !important;
+
+    #image {
+      width: 90%;
+      height: auto;
+      min-width: 250px;
+      max-width: 700px;
+    }
+    #img-caption {
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      min-width: 300px;
+      max-width: 850px;
+      padding: 10px 0 !important;
+    }
   }
 }
 
@@ -63,6 +68,7 @@ body {
   @include centered-flex;
   flex-direction: column;
   width: 100%;
+  max-width: 500px;
 
   #tribute-info {
     padding: 30px 0 !important;
@@ -88,6 +94,7 @@ body {
   flex-direction: column;
   row-gap: 15px;
   width: 100%;
+  max-width: 600px;
   padding: 40px 0 20px !important;
 
   .tomb-head {
@@ -112,8 +119,19 @@ body {
 
 // REFERENCES
 .references {
-  padding-top: 25px !important;
   text-align: center;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(37, 37, 37, 0.938),
+    rgb(37, 37, 37)
+  );
+  padding: 25px !important;
   font-size: 1.25rem;
   font-weight: 700;
+  color: rgb(214, 212, 212);
+
+  a {
+    color: rgb(68, 80, 253);
+  }
 }
